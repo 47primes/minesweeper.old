@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; UTF-8" http-equiv="Content-Type" />
+		<meta name="description" content="Minesweeper" />
+		<meta name="author" content="47 Primes" />
+		<meta name="rating" content="general" />
+		<script src="javascripts/minesweeper.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/minesweeper.css" />
+	</head>
+	<body>
+		<h1 style="text-align:center;">Minesweeper</h1>
+		<div id="minesweeper_sizes"></div>
+		<div id="minesweeper"></div>
+		<script>
+		//<![CDATA[
+			window.onload = function() {
+				game = new Minesweeper('game','minesweeper','beginner');
+				document.getElementById('minesweeper_sizes').innerHTML = game.printNav();
+				document.getElementById('minesweeper').innerHTML = game.toHTML();
+			};
+		//]]>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+#minesweeper_sizes {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	color: #333;
+}
+#minesweeper {
+	margin: 0 auto;
+	width: 100%;
+}
+#minesweeper table {
+	margin: 2em auto;
+	border-collapse: collapse;
+	background-color: #C0C0C0;
+}
+#minesweeper table thead {
+	border: 1px solid #808080;
+}
+#flags {
+	position: absolute;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	width: 100%;
+	color: #cc0000;
+}
+#smiley {
+	float: right;
+	width: 100%;
+}
+#minesweeper table td {
+	text-align: center;
+	vertical-align: middle;
+	width: 14px;
+	height: 17px;
+	border: 1px solid #808080;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	font-family: Courier;
+	line-height: 12px;
+	font-weight: bold;
+}
+#minesweeper table td.covered {
+	background-image: url(../images/covered.gif);
+}
+#minesweeper table td.armed {
+	background-image: url(../images/armed.gif);
+}
+#minesweeper table td.armed_and_clicked {
+	background-image: url(../images/armed_and_clicked.gif);
+}
+#minesweeper table td.flagged_wrong {
+	background-image: url(../images/flagged_wrong.gif);
+}
+#minesweeper table td.flagged {
+	background-image: url(../images/flagged.gif);
+}
+#minesweeper table td.questioned {
+	background-image: url(../images/questioned.gif);
+}
+.value1 {
+	color: #0000ff;
+}
+.value2 {
+	color: #008000;
+}
+.value3 {
+	color: #ff0000;
+}
+.value4 {
+	color: #000080;
+}
+.value5 {
+	color: #00ff00;
+}
+.value6 {
+	color: #080000;
+}
+.value7 {
+	color: #ff0000;
+}
+.value8 {
+	color: #ff0000;
+}
+/* IE7- valid-css hacks */
+*:first-child+html #minesweeper table td.number {
+	height: 15px;
+}
+* html #minesweeper table td.number {
+	height: 15px;
+}
+*:first-child+html #minesweeper {
+	padding-top: 1em;
+}
+* html #minesweeper {
+	padding-top: 1em;
+}
+/* End of IE hacks */
+.minesweeper_nav {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+.minesweeper_nav:hover {
+	text-decoration: underline;
+}
